@@ -2,7 +2,7 @@
 
 GAPIfu is a wrapper for the [Google Analytics PHP Interface (GAPI)](https://github.com/erebusnz/gapi-google-analytics-php-interface)
 
-It allows you to run queries using the Google Analytics Query API, cache, and output results as a Stash list.
+It allows you to run queries using the Google Analytics Query API, cache the result for a given time, and output as a Stash list.
 
 ### Requirements
 
