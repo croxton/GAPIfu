@@ -64,7 +64,6 @@ class Gapifu {
 	 * Constructor
 	 *
 	 * @access public
-	 * @return void
 	 */
 	public function __construct() 
 	{
@@ -73,7 +72,7 @@ class Gapifu {
     		include_once PATH_THIRD . 'stash/mod.stash.php';
 		}
 
-		// config
+		// get from config
 		$this->email = ee()->config->item('gapifu_email');
 		$this->keyfile = ee()->config->item('gapifu_keyfile');
 	}
@@ -81,8 +80,7 @@ class Gapifu {
 	/** 
 	 * OAuth2
 	 *
-	 * @access public
-	 * @return string
+	 * @access private
 	 */ 
 	private function _auth()
 	{
@@ -138,7 +136,8 @@ class Gapifu {
 
 	}
 
-	/* Run a query and generate a report
+	/**
+	 * Run a query and generate a report
 	 *
 	 * @access public
 	 * @return string
