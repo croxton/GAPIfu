@@ -82,7 +82,7 @@ The `name=""` parameter is required.
 You should omit the `ga:` prefix in the values passed for these parameters:
 
 ##### ga:report_id
-*(required)* The unique ID used to retrieve the Analytics data. This ID is the concatenation of the namespace ga: with the Analytics view (profile) ID.
+*(required)* The unique Google Analytics profile ID.
 
 ##### ga:dimensions
 *(required)* The dimensions parameter breaks down metrics by common criteria; for example, by `pagePath` or `pageTitle`.
