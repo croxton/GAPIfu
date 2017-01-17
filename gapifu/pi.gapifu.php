@@ -27,7 +27,7 @@ require_once PATH_THIRD . 'gapifu/libraries/gapi.class.php';
 
 $plugin_info = array(
   'pi_name' => 'GAPIfu',
-  'pi_version' =>'1.0.0',
+  'pi_version' =>'1.0.1',
   'pi_author' =>'Mark Croxton',
   'pi_author_url' => 'http://www.hallmark-design.co.uk/',
   'pi_description' => 'Wrapper for Google Analytics PHP Interface (GAPI). Requires Stash.',
@@ -207,6 +207,10 @@ class Gapifu {
 				            }
 						}
 					}
+
+					// sanitize for display in templates
+					$row[$v] = htmlentities($row[$v], ENT_QUOTES, ee()->config->item('charset') ?: 'UTF-8');
+					$row[$v] = str_replace(array('{', '}'), array('&#123;', '&#125;'), $row[$v]);
 				}
 
 				$data[] = $row;
