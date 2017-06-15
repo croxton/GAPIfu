@@ -1,4 +1,4 @@
-##GAPIfu v1.0.1
+## GAPIfu v1.0.1
 
 GAPIfu is a wrapper for the [Google Analytics PHP Interface (GAPI)](https://github.com/erebusnz/gapi-google-analytics-php-interface)
 
